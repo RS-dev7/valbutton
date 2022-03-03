@@ -1,0 +1,159 @@
+
+@font-face {
+  font-family: "DIN Next LT Pro Bold";
+  src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot");
+  src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.svg#DIN Next LT Pro Bold")
+      format("svg");
+}
+
+:root {
+  --v-red: #ff4655;
+  --v-red-hover: #f13246;
+  --v-white: #ece8e1;
+  --v-black: #0f1923;
+  --v-outline: rgba(236, 232, 225, 0.5);
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+} 
+
+
+html,
+body {
+  font-size: 15px;
+  margin: 0;
+  background-color: var(--v-black);
+  color: var(--v-white);
+  font-family: "Valorant", sans-serif;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.box {
+  width: 25%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.nav-list {
+  background: white;
+  box-shadow: 0px, 0px, 10px, #cfd8dc;
+  padding: 0.5rem 0;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #0f1923;
+  transition: all 200ms ease-in;
+}
+
+.nav-item a:hover {
+  color: var(--v-red-hover);
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.nav-Btn {
+  background: white;
+  box-shadow: 0px, 0px, 10px, #cfd8dc;
+  padding: 0.5rem 0;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contactBtn {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  background: var(--v-red);
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #0f1923;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  margin-right: 2rem;
+  transition: all 200ms ease-in;
+}
+
+.contactBtn a {
+  text-decoration: none;
+  color: #0f1923;
+  transition: all 200ms ease-in;
+}
+
+.contactBtn:hover {
+  background-color: var(--v-red-hover);
+  color: white;
+}
+
+.info1 {
+  align-self: start;
+  text-align: center;
+  animation: 2000ms ease-in-out 4000ms 1 slideInFromBottom backwards;
+}
+.info2 {
+  align-self: start;
+  text-align: center;
+  animation: 4000ms ease-in-out 8000ms 1 slideInFromBottom backwards;
+}
+.info3 {
+  align-self: start;
+  text-align: center;
+  animation: 8000ms ease-in-out 10000ms 1 slideInFromBottom backwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
